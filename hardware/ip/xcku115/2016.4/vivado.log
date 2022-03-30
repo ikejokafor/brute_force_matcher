@@ -1,0 +1,103 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Aug 29 18:19:59 2017
+# Process ID: 15037
+# Current directory: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115
+# Command line: vivado
+# Log file: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/vivado.log
+# Journal file: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.xpr
+INFO: [Project 1-313] Project file moved from 'C:/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/software/vivado-2016.1/Vivado/2016.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'brute_force_matcher_squareRoot' is locked:
+* Current project part 'xc7vx485tffg1157-1' and the part 'xcku115-flva1517-2-e' used to customize the IP 'brute_force_matcher_squareRoot' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 6037.621 ; gain = 176.145 ; free physical = 51371 ; free virtual = 69007
+add_files -norecurse /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096/ila_128_4096.xci
+WARNING: [IP_Flow 19-2162] IP 'ila_128_4096' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.0)' for IP 'ila_128_4096' has a newer minor version in the IP Catalog.
+* Current project part 'xc7vx485tffg1157-1' and the part 'xcku115-flva1517-2-e' used to customize the IP 'ila_128_4096' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+export_ip_user_files -of_objects  [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096/ila_128_4096.xci] -force -quiet
+copy_ip -name ila_128_4096_1 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115 [get_ips  ila_128_4096]
+WARNING: [IP_Flow 19-2162] IP 'ila_128_4096_1' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.0)' for IP 'ila_128_4096_1' has a newer minor version in the IP Catalog.
+* Current project part 'xc7vx485tffg1157-1' and the part 'xcku115-flva1517-2-e' used to customize the IP 'ila_128_4096_1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+remove_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1/ila_128_4096_1.xci
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1
+copy_ip -name ila_128_4096_1 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115 [get_ips  ila_128_4096]
+WARNING: [IP_Flow 19-2162] IP 'ila_128_4096_1' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.0)' for IP 'ila_128_4096_1' has a newer minor version in the IP Catalog.
+* Current project part 'xc7vx485tffg1157-1' and the part 'xcku115-flva1517-2-e' used to customize the IP 'ila_128_4096_1' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+export_ip_user_files -of_objects [get_ips  ila_128_4096_1] -no_script -reset -quiet
+upgrade_ip -vlnv xilinx.com:ip:ila:6.1 [get_ips  ila_128_4096_1] -log ip_upgrade.log
+Upgrading 'ila_128_4096_1'
+INFO: [IP_Flow 19-1972] Upgraded ila_128_4096_1 from ILA (Integrated Logic Analyzer) 6.0 to ILA (Integrated Logic Analyzer) 6.1
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_128_4096_1'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 6078.074 ; gain = 31.910 ; free physical = 51311 ; free virtual = 68967
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4331] Invalid usage of property - Setting value property on PARAM_VALUE.ALL_PROBE_SAME_MU is not allowed in procedure update_gui_for_PARAM_VALUE.C_ADV_TRIGGER
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.1 -module_name ila_256_4096 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {256} CONFIG.C_DATA_DEPTH {4096}] [get_ips ila_256_4096]
+generate_target {instantiation_template} [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_256_4096'...
+generate_target all [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_256_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_256_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_256_4096'...
+generate_target: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:05 . Memory (MB): peak = 6214.059 ; gain = 0.000 ; free physical = 51114 ; free virtual = 68802
+export_ip_user_files -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+launch_run -jobs 12 ila_256_4096_synth_1
+[Tue Aug 29 18:24:56 2017] Launched ila_256_4096_synth_1...
+Run output will be captured here: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.runs/ila_256_4096_synth_1/runme.log
+export_simulation -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -directory /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts -ip_user_files_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files -ipstatic_source_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ipstatic -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+remove_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1/ila_128_4096_1.xci
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {512}] [get_ips ila_256_4096]
+generate_target all [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_256_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_256_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_256_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_256_4096'...
+export_ip_user_files -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -no_script -force -quiet
+reset_run ila_256_4096_synth_1
+launch_run -jobs 12 ila_256_4096_synth_1
+[Tue Aug 29 18:39:01 2017] Launched ila_256_4096_synth_1...
+Run output will be captured here: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.runs/ila_256_4096_synth_1/runme.log
+export_simulation -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -directory /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts -ip_user_files_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files -ipstatic_source_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ipstatic -force -quiet
+copy_ip -name ila_300_4096 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115 [get_ips  ila_256_4096]
+copy_ip: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 6254.152 ; gain = 0.000 ; free physical = 50325 ; free virtual = 68136
+remove_files -fileset ila_256_4096 /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci
+INFO: [Project 1-386] Moving file '/home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci' from fileset 'ila_256_4096' to fileset 'sources_1'.
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ip/ila_256_4096 /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts/ila_256_4096
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {300}] [get_ips ila_300_4096]
+generate_target all [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_300_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_300_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_300_4096'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_300_4096'...
+export_ip_user_files -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci]
+launch_run -jobs 12 ila_300_4096_synth_1
+[Tue Aug 29 18:41:36 2017] Launched ila_300_4096_synth_1...
+Run output will be captured here: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.runs/ila_300_4096_synth_1/runme.log
+export_simulation -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci] -directory /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts -ip_user_files_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files -ipstatic_source_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ipstatic -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 29 20:37:27 2017...

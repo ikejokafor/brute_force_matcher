@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Aug 29 18:19:59 2017
+# Process ID: 15037
+# Current directory: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115
+# Command line: vivado
+# Log file: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/vivado.log
+# Journal file: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.xpr
+add_files -norecurse /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096/ila_128_4096.xci
+export_ip_user_files -of_objects  [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096/ila_128_4096.xci] -force -quiet
+copy_ip -name ila_128_4096_1 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115 [get_ips  ila_128_4096]
+remove_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1/ila_128_4096_1.xci
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1
+copy_ip -name ila_128_4096_1 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115 [get_ips  ila_128_4096]
+export_ip_user_files -of_objects [get_ips  ila_128_4096_1] -no_script -reset -quiet
+upgrade_ip -vlnv xilinx.com:ip:ila:6.1 [get_ips  ila_128_4096_1] -log ip_upgrade.log
+create_ip -name ila -vendor xilinx.com -library ip -version 6.1 -module_name ila_256_4096 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {256} CONFIG.C_DATA_DEPTH {4096}] [get_ips ila_256_4096]
+generate_target {instantiation_template} [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+generate_target all [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+export_ip_user_files -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+launch_run -jobs 12 ila_256_4096_synth_1
+export_simulation -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -directory /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts -ip_user_files_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files -ipstatic_source_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ipstatic -force -quiet
+remove_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1/ila_128_4096_1.xci
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_128_4096_1
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {512}] [get_ips ila_256_4096]
+generate_target all [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci]
+export_ip_user_files -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -no_script -force -quiet
+reset_run ila_256_4096_synth_1
+launch_run -jobs 12 ila_256_4096_synth_1
+export_simulation -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci] -directory /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts -ip_user_files_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files -ipstatic_source_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ipstatic -force -quiet
+copy_ip -name ila_300_4096 -dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115 [get_ips  ila_256_4096]
+remove_files -fileset ila_256_4096 /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096/ila_256_4096.xci
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_256_4096
+file delete -force /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ip/ila_256_4096 /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts/ila_256_4096
+set_property -dict [list CONFIG.C_PROBE0_WIDTH {300}] [get_ips ila_300_4096]
+generate_target all [get_files  /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci]
+export_ip_user_files -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci] -no_script -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci]
+launch_run -jobs 12 ila_300_4096_synth_1
+export_simulation -of_objects [get_files /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ila_300_4096/ila_300_4096.xci] -directory /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/sim_scripts -ip_user_files_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files -ipstatic_source_dir /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/ip_user_files/ipstatic -force -quiet

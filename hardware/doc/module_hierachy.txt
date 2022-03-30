@@ -1,0 +1,50 @@
+brute_force_matcher
+	|
+	|
+	|_ _ _ brute_force_matcher_controller
+	|		|
+	|		|
+	|		|_ _ _ brute_force_matcher_cluster_descriptor_engine
+	|					|
+	|					|
+	|					|_ _ _ brute_force_matcher_circular_descriptor_buffer (Primary)
+	|					|
+	|					|
+	|					|_ _ _ brute_force_matcher_secondary_descriptor_buffer
+	|					|			|
+	|					|			|
+	|					|			|_ _ _brute_force_matcher_buffer_control
+	|					|			|
+	|					|			|
+	|					|			|_ _ _ brute_force_matcher_circular_descriptor_buffer (Secondary)
+	|					|
+	|					|
+	|					|_ _ _ brute_force_matcher_keypoint_dispatch_unit
+	|					|
+	|					|
+	|					|_ _ _ brute_force_matcher_descriptor_compute_pipeline
+	|								|
+	|								|
+	|								|_ _ _ brute_force_matcher_keyPointEngine
+	|										|
+	|										|
+	|										|_ _ _ brute_force_matcher_preSubSquareAccum_DSP_0 
+	|										|
+	|										|
+	|										|_ _ _ brute_force_matcher_preSubSquareAccum_DSP_1
+	|										|
+	|										|
+	|										|_ _ _ brute_force_matcher_preSubSquareAccum_DSP_2
+	|										.
+	|										.
+	|										.
+	|										.
+	|										.
+	|										.
+	|										.
+	|										|
+	|										|_ _ _ brute_force_matcher_preSubSquareAccum_DSP_N
+	|
+    |
+	|_ _ _ brute_force_matcher_match_table
+

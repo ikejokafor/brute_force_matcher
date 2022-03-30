@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Aug 29 18:41:37 2017
+# Process ID: 16253
+# Current directory: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.runs/ila_300_4096_synth_1
+# Command line: vivado -log ila_300_4096.vds -mode batch -messageDb vivado.pb -notrace -source ila_300_4096.tcl
+# Log file: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.runs/ila_300_4096_synth_1/ila_300_4096.vds
+# Journal file: /home/mdl/izo5011/SOC_IT/brute_force_matcher/hardware/ip/xcku115/managed_ip_project/managed_ip_project.runs/ila_300_4096_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ila_300_4096.tcl -notrace

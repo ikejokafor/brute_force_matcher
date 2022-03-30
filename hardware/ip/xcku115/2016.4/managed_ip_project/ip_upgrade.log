@@ -1,0 +1,1237 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Nov  1 02:23:35 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xcku115-flva1517-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_squareRoot'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_squareRoot (xilinx.com:ip:cordic:6.0 (Rev. 11)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Nov  1 02:23:34 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xcku115-flva1517-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_secondary_buffer_fifo_64dsp1'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_secondary_buffer_fifo_64dsp1 (xilinx.com:ip:fifo_generator:13.1 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Nov  1 02:23:33 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xcku115-flva1517-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_secondary_buffer_fifo_64dsp0'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_secondary_buffer_fifo_64dsp0 (xilinx.com:ip:fifo_generator:13.1 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Nov  1 02:23:32 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xcku115-flva1517-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_secondary_buffer_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_secondary_buffer_fifo (xilinx.com:ip:fifo_generator:13.1 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Nov  1 02:23:31 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xcku115-flva1517-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_match_table_info_fifo'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of brute_force_matcher_match_table_info_fifo (xilinx.com:ip:fifo_generator:13.1 (Rev. 3)) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'brute_force_matcher_match_table_info_fifo'.
+
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'brute_force_matcher_match_table_info_fifo'. These changes may impact your design.
+
+
+
+4. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'Output_Data_Width' from '32' to '128' has been ignored for IP 'brute_force_matcher_match_table_info_fifo'
+
+An attempt to modify the value of disabled parameter 'Output_Depth' from '2048' to '512' has been ignored for IP 'brute_force_matcher_match_table_info_fifo'
+
+An attempt to modify the value of disabled parameter 'Read_Data_Count' from 'false' to 'true' has been ignored for IP 'brute_force_matcher_match_table_info_fifo'
+
+An attempt to modify the value of disabled parameter 'Read_Data_Count_Width' from '12' to '10' has been ignored for IP 'brute_force_matcher_match_table_info_fifo'
+
+
+5. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:fifo_generator:13.1 -user_name brute_force_matcher_match_table_info_fifo
+set_property -dict "\
+  CONFIG.ADDRESS_WIDTH {32} \
+  CONFIG.ARUSER_Width {0} \
+  CONFIG.AWUSER_Width {0} \
+  CONFIG.Add_NGC_Constraint_AXI {false} \
+  CONFIG.Almost_Empty_Flag {false} \
+  CONFIG.Almost_Full_Flag {false} \
+  CONFIG.BUSER_Width {0} \
+  CONFIG.C_SELECT_XPM {0} \
+  CONFIG.Clock_Enable_Type {Slave_Interface_Clock_Enable} \
+  CONFIG.Clock_Type_AXI {Common_Clock} \
+  CONFIG.Component_Name {brute_force_matcher_match_table_info_fifo} \
+  CONFIG.DATA_WIDTH {64} \
+  CONFIG.Data_Count {false} \
+  CONFIG.Data_Count_Width {12} \
+  CONFIG.Disable_Timing_Violations {false} \
+  CONFIG.Disable_Timing_Violations_AXI {false} \
+  CONFIG.Dout_Reset_Value {0} \
+  CONFIG.Empty_Threshold_Assert_Value {4} \
+  CONFIG.Empty_Threshold_Assert_Value_axis {1022} \
+  CONFIG.Empty_Threshold_Assert_Value_rach {1022} \
+  CONFIG.Empty_Threshold_Assert_Value_rdch {1022} \
+  CONFIG.Empty_Threshold_Assert_Value_wach {1022} \
+  CONFIG.Empty_Threshold_Assert_Value_wdch {1022} \
+  CONFIG.Empty_Threshold_Assert_Value_wrch {1022} \
+  CONFIG.Empty_Threshold_Negate_Value {5} \
+  CONFIG.Enable_Common_Overflow {false} \
+  CONFIG.Enable_Common_Underflow {false} \
+  CONFIG.Enable_Data_Counts_axis {false} \
+  CONFIG.Enable_Data_Counts_rach {false} \
+  CONFIG.Enable_Data_Counts_rdch {false} \
+  CONFIG.Enable_Data_Counts_wach {false} \
+  CONFIG.Enable_Data_Counts_wdch {false} \
+  CONFIG.Enable_Data_Counts_wrch {false} \
+  CONFIG.Enable_ECC {false} \
+  CONFIG.Enable_ECC_Type {Hard_ECC} \
+  CONFIG.Enable_ECC_axis {false} \
+  CONFIG.Enable_ECC_rach {false} \
+  CONFIG.Enable_ECC_rdch {false} \
+  CONFIG.Enable_ECC_wach {false} \
+  CONFIG.Enable_ECC_wdch {false} \
+  CONFIG.Enable_ECC_wrch {false} \
+  CONFIG.Enable_Reset_Synchronization {true} \
+  CONFIG.Enable_Safety_Circuit {false} \
+  CONFIG.Enable_TLAST {false} \
+  CONFIG.Enable_TREADY {true} \
+  CONFIG.FIFO_Application_Type_axis {Data_FIFO} \
+  CONFIG.FIFO_Application_Type_rach {Data_FIFO} \
+  CONFIG.FIFO_Application_Type_rdch {Data_FIFO} \
+  CONFIG.FIFO_Application_Type_wach {Data_FIFO} \
+  CONFIG.FIFO_Application_Type_wdch {Data_FIFO} \
+  CONFIG.FIFO_Application_Type_wrch {Data_FIFO} \
+  CONFIG.FIFO_Implementation_axis {Common_Clock_Block_RAM} \
+  CONFIG.FIFO_Implementation_rach {Common_Clock_Block_RAM} \
+  CONFIG.FIFO_Implementation_rdch {Common_Clock_Block_RAM} \
+  CONFIG.FIFO_Implementation_wach {Common_Clock_Block_RAM} \
+  CONFIG.FIFO_Implementation_wdch {Common_Clock_Block_RAM} \
+  CONFIG.FIFO_Implementation_wrch {Common_Clock_Block_RAM} \
+  CONFIG.Fifo_Implementation {Common_Clock_Block_RAM} \
+  CONFIG.Full_Flags_Reset_Value {0} \
+  CONFIG.Full_Threshold_Assert_Value {2047} \
+  CONFIG.Full_Threshold_Assert_Value_axis {1023} \
+  CONFIG.Full_Threshold_Assert_Value_rach {1023} \
+  CONFIG.Full_Threshold_Assert_Value_rdch {1023} \
+  CONFIG.Full_Threshold_Assert_Value_wach {1023} \
+  CONFIG.Full_Threshold_Assert_Value_wdch {1023} \
+  CONFIG.Full_Threshold_Assert_Value_wrch {1023} \
+  CONFIG.Full_Threshold_Negate_Value {2046} \
+  CONFIG.HAS_ACLKEN {false} \
+  CONFIG.HAS_TKEEP {false} \
+  CONFIG.HAS_TSTRB {false} \
+  CONFIG.ID_WIDTH {0} \
+  CONFIG.INTERFACE_TYPE {Native} \
+  CONFIG.Inject_Dbit_Error {false} \
+  CONFIG.Inject_Dbit_Error_axis {false} \
+  CONFIG.Inject_Dbit_Error_rach {false} \
+  CONFIG.Inject_Dbit_Error_rdch {false} \
+  CONFIG.Inject_Dbit_Error_wach {false} \
+  CONFIG.Inject_Dbit_Error_wdch {false} \
+  CONFIG.Inject_Dbit_Error_wrch {false} \
+  CONFIG.Inject_Sbit_Error {false} \
+  CONFIG.Inject_Sbit_Error_axis {false} \
+  CONFIG.Inject_Sbit_Error_rach {false} \
+  CONFIG.Inject_Sbit_Error_rdch {false} \
+  CONFIG.Inject_Sbit_Error_wach {false} \
+  CONFIG.Inject_Sbit_Error_wdch {false} \
+  CONFIG.Inject_Sbit_Error_wrch {false} \
+  CONFIG.Input_Data_Width {32} \
+  CONFIG.Input_Depth {2048} \
+  CONFIG.Input_Depth_axis {1024} \
+  CONFIG.Input_Depth_rach {16} \
+  CONFIG.Input_Depth_rdch {1024} \
+  CONFIG.Input_Depth_wach {16} \
+  CONFIG.Input_Depth_wdch {1024} \
+  CONFIG.Input_Depth_wrch {16} \
+  CONFIG.Master_interface_Clock_enable_memory_mapped {false} \
+  CONFIG.Output_Data_Width {128} \
+  CONFIG.Output_Depth {512} \
+  CONFIG.Output_Register_Type {Embedded_Reg} \
+  CONFIG.Overflow_Flag {false} \
+  CONFIG.Overflow_Flag_AXI {false} \
+  CONFIG.Overflow_Sense {Active_High} \
+  CONFIG.Overflow_Sense_AXI {Active_High} \
+  CONFIG.PROTOCOL {AXI4} \
+  CONFIG.Performance_Options {First_Word_Fall_Through} \
+  CONFIG.Programmable_Empty_Type {No_Programmable_Empty_Threshold} \
+  CONFIG.Programmable_Empty_Type_axis {No_Programmable_Empty_Threshold} \
+  CONFIG.Programmable_Empty_Type_rach {No_Programmable_Empty_Threshold} \
+  CONFIG.Programmable_Empty_Type_rdch {No_Programmable_Empty_Threshold} \
+  CONFIG.Programmable_Empty_Type_wach {No_Programmable_Empty_Threshold} \
+  CONFIG.Programmable_Empty_Type_wdch {No_Programmable_Empty_Threshold} \
+  CONFIG.Programmable_Empty_Type_wrch {No_Programmable_Empty_Threshold} \
+  CONFIG.Programmable_Full_Type {No_Programmable_Full_Threshold} \
+  CONFIG.Programmable_Full_Type_axis {No_Programmable_Full_Threshold} \
+  CONFIG.Programmable_Full_Type_rach {No_Programmable_Full_Threshold} \
+  CONFIG.Programmable_Full_Type_rdch {No_Programmable_Full_Threshold} \
+  CONFIG.Programmable_Full_Type_wach {No_Programmable_Full_Threshold} \
+  CONFIG.Programmable_Full_Type_wdch {No_Programmable_Full_Threshold} \
+  CONFIG.Programmable_Full_Type_wrch {No_Programmable_Full_Threshold} \
+  CONFIG.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.RUSER_Width {0} \
+  CONFIG.Read_Clock_Frequency {1} \
+  CONFIG.Read_Data_Count {true} \
+  CONFIG.Read_Data_Count_Width {10} \
+  CONFIG.Register_Slice_Mode_axis {Fully_Registered} \
+  CONFIG.Register_Slice_Mode_rach {Fully_Registered} \
+  CONFIG.Register_Slice_Mode_rdch {Fully_Registered} \
+  CONFIG.Register_Slice_Mode_wach {Fully_Registered} \
+  CONFIG.Register_Slice_Mode_wdch {Fully_Registered} \
+  CONFIG.Register_Slice_Mode_wrch {Fully_Registered} \
+  CONFIG.Reset_Pin {true} \
+  CONFIG.Reset_Type {Synchronous_Reset} \
+  CONFIG.Slave_interface_Clock_enable_memory_mapped {false} \
+  CONFIG.TDATA_NUM_BYTES {1} \
+  CONFIG.TDEST_WIDTH {0} \
+  CONFIG.TID_WIDTH {0} \
+  CONFIG.TKEEP_WIDTH {1} \
+  CONFIG.TSTRB_WIDTH {1} \
+  CONFIG.TUSER_WIDTH {4} \
+  CONFIG.Underflow_Flag {false} \
+  CONFIG.Underflow_Flag_AXI {false} \
+  CONFIG.Underflow_Sense {Active_High} \
+  CONFIG.Underflow_Sense_AXI {Active_High} \
+  CONFIG.Use_Dout_Reset {true} \
+  CONFIG.Use_Embedded_Registers {false} \
+  CONFIG.Use_Embedded_Registers_axis {false} \
+  CONFIG.Use_Extra_Logic {true} \
+  CONFIG.Valid_Flag {true} \
+  CONFIG.Valid_Sense {Active_High} \
+  CONFIG.WUSER_Width {0} \
+  CONFIG.Write_Acknowledge_Flag {false} \
+  CONFIG.Write_Acknowledge_Sense {Active_High} \
+  CONFIG.Write_Clock_Frequency {1} \
+  CONFIG.Write_Data_Count {false} \
+  CONFIG.Write_Data_Count_Width {12} \
+  CONFIG.asymmetric_port_width {false} \
+  CONFIG.axis_type {FIFO} \
+  CONFIG.core_clk.FREQ_HZ {100000000} \
+  CONFIG.dynamic_power_saving {false} \
+  CONFIG.ecc_pipeline_reg {false} \
+  CONFIG.enable_low_latency {false} \
+  CONFIG.enable_read_pointer_increment_by2 {false} \
+  CONFIG.rach_type {FIFO} \
+  CONFIG.rdch_type {FIFO} \
+  CONFIG.synchronization_stages {2} \
+  CONFIG.synchronization_stages_axi {2} \
+  CONFIG.use_dout_register {false} \
+  CONFIG.wach_type {FIFO} \
+  CONFIG.wdch_type {FIFO} \
+  CONFIG.wrch_type {FIFO} " [get_ips brute_force_matcher_match_table_info_fifo]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Nov  1 02:23:29 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xcku115-flva1517-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_match_table_info_bram'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_match_table_info_bram (xilinx.com:ip:blk_mem_gen:8.3 (Rev. 5)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Thu Nov  1 02:23:17 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xcku115-flva1517-2-e
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_fixed_to_flt'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_fixed_to_flt (xilinx.com:ip:floating_point:7.1 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:10:45 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_768_4096'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_768_4096 from xilinx.com:ip:ila:6.1 to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:10:10 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_512_4096'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_512_4096 from xilinx.com:ip:ila:6.1 to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:09:35 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_448_4096'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_448_4096 from xilinx.com:ip:ila:6.1 to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:08:59 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_256_4096'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_256_4096 from xilinx.com:ip:ila:6.1 to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:08:24 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_128_4096'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_128_4096 from xilinx.com:ip:ila:6.1 to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:07:49 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_128_1024'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_128_1024 from xilinx.com:ip:ila:6.1 to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:07:14 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_1024_4096'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_1024_4096 from xilinx.com:ip:ila:6.1 to xilinx.com:ip:ila:6.2 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:37 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_squareRoot'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_squareRoot (xilinx.com:ip:cordic:6.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:37 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_secondary_buffer_fifo_64dsp1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_secondary_buffer_fifo_64dsp1 (xilinx.com:ip:fifo_generator:13.1) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:36 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_secondary_buffer_fifo_64dsp0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_secondary_buffer_fifo_64dsp0 (xilinx.com:ip:fifo_generator:13.1) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:34 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_secondary_buffer_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_secondary_buffer_fifo (xilinx.com:ip:fifo_generator:13.1) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:33 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_match_table_info_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_match_table_info_fifo (xilinx.com:ip:fifo_generator:13.1) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:32 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_match_table_info_bram'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_match_table_info_bram (xilinx.com:ip:blk_mem_gen:8.3) from (Rev. 2) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:16 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_fixed_to_flt'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_fixed_to_flt (xilinx.com:ip:floating_point:7.1) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:13 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_dispatch_unit_dwc_fifo_64dsp'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_dispatch_unit_dwc_fifo_64dsp (xilinx.com:ip:fifo_generator:13.1) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1733598 Wed Dec 14 22:35:42 MST 2016
+| Date         : Wed Aug  1 19:06:12 2018
+| Host         : redrealm.cse.psu.edu running 64-bit unknown
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_dispatch_unit_dwc_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of brute_force_matcher_dispatch_unit_dwc_fifo (xilinx.com:ip:fifo_generator:13.1) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Thu Aug 31 21:57:50 2017
+| Host         : redrealm.cse.psu.edu running 64-bit Red Hat Enterprise Linux Client release 5.11 (Tikanga)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_fixed_to_flt'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_fixed_to_flt (xilinx.com:ip:floating_point:7.1 (Rev. 2)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Thu Aug 31 21:56:44 2017
+| Host         : redrealm.cse.psu.edu running 64-bit Red Hat Enterprise Linux Client release 5.11 (Tikanga)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_squareRoot'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_squareRoot (xilinx.com:ip:cordic:6.0 (Rev. 10)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Thu Aug 31 21:56:12 2017
+| Host         : redrealm.cse.psu.edu running 64-bit Red Hat Enterprise Linux Client release 5.11 (Tikanga)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_128_4096'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_128_4096 from xilinx.com:ip:ila:6.0 (Rev. 1) to xilinx.com:ip:ila:6.1
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Thu Aug 31 21:54:18 2017
+| Host         : redrealm.cse.psu.edu running 64-bit Red Hat Enterprise Linux Client release 5.11 (Tikanga)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_secondary_buffer_fifo'
+
+1. Summary
+----------
+
+SUCCESS in the update of brute_force_matcher_secondary_buffer_fifo (xilinx.com:ip:fifo_generator:13.1) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Thu Aug 31 21:47:42 2017
+| Host         : redrealm.cse.psu.edu running 64-bit Red Hat Enterprise Linux Client release 5.11 (Tikanga)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_dispatch_unit_dwc_fifo'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of brute_force_matcher_dispatch_unit_dwc_fifo (xilinx.com:ip:fifo_generator:13.1) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'brute_force_matcher_dispatch_unit_dwc_fifo'. These changes may impact your design.
+
+
+-Upgrade has removed port 'rd_rst_busy'
+
+-Upgrade has removed port 'wr_rst_busy'
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'asymmetric_port_width' from 'false' to 'true' has been ignored for IP 'brute_force_matcher_dispatch_unit_dwc_fifo'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:fifo_generator:13.1 -user_name brute_force_matcher_dispatch_unit_dwc_fifo
+set_property -dict "\
+  CONFIG.ADDRESS_WIDTH 32 \
+  CONFIG.ARUSER_Width 0 \
+  CONFIG.AWUSER_Width 0 \
+  CONFIG.Add_NGC_Constraint_AXI false \
+  CONFIG.Almost_Empty_Flag false \
+  CONFIG.Almost_Full_Flag false \
+  CONFIG.BUSER_Width 0 \
+  CONFIG.C_SELECT_XPM 0 \
+  CONFIG.Clock_Enable_Type Slave_Interface_Clock_Enable \
+  CONFIG.Clock_Type_AXI Common_Clock \
+  CONFIG.Component_Name brute_force_matcher_dispatch_unit_dwc_fifo \
+  CONFIG.DATA_WIDTH 64 \
+  CONFIG.Data_Count false \
+  CONFIG.Data_Count_Width 14 \
+  CONFIG.Disable_Timing_Violations false \
+  CONFIG.Disable_Timing_Violations_AXI false \
+  CONFIG.Dout_Reset_Value 0 \
+  CONFIG.Empty_Threshold_Assert_Value 4 \
+  CONFIG.Empty_Threshold_Assert_Value_axis 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_rach 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_rdch 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_wach 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_wdch 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_wrch 1022 \
+  CONFIG.Empty_Threshold_Negate_Value 5 \
+  CONFIG.Enable_Common_Overflow false \
+  CONFIG.Enable_Common_Underflow false \
+  CONFIG.Enable_Data_Counts_axis false \
+  CONFIG.Enable_Data_Counts_rach false \
+  CONFIG.Enable_Data_Counts_rdch false \
+  CONFIG.Enable_Data_Counts_wach false \
+  CONFIG.Enable_Data_Counts_wdch false \
+  CONFIG.Enable_Data_Counts_wrch false \
+  CONFIG.Enable_ECC false \
+  CONFIG.Enable_ECC_Type Hard_ECC \
+  CONFIG.Enable_ECC_axis false \
+  CONFIG.Enable_ECC_rach false \
+  CONFIG.Enable_ECC_rdch false \
+  CONFIG.Enable_ECC_wach false \
+  CONFIG.Enable_ECC_wdch false \
+  CONFIG.Enable_ECC_wrch false \
+  CONFIG.Enable_Reset_Synchronization true \
+  CONFIG.Enable_Safety_Circuit false \
+  CONFIG.Enable_TLAST false \
+  CONFIG.Enable_TREADY true \
+  CONFIG.FIFO_Application_Type_axis Data_FIFO \
+  CONFIG.FIFO_Application_Type_rach Data_FIFO \
+  CONFIG.FIFO_Application_Type_rdch Data_FIFO \
+  CONFIG.FIFO_Application_Type_wach Data_FIFO \
+  CONFIG.FIFO_Application_Type_wdch Data_FIFO \
+  CONFIG.FIFO_Application_Type_wrch Data_FIFO \
+  CONFIG.FIFO_Implementation_axis Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_rach Common_Clock_Distributed_RAM \
+  CONFIG.FIFO_Implementation_rdch Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_wach Common_Clock_Distributed_RAM \
+  CONFIG.FIFO_Implementation_wdch Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_wrch Common_Clock_Distributed_RAM \
+  CONFIG.Fifo_Implementation Common_Clock_Block_RAM \
+  CONFIG.Full_Flags_Reset_Value 0 \
+  CONFIG.Full_Threshold_Assert_Value 8191 \
+  CONFIG.Full_Threshold_Assert_Value_axis 1023 \
+  CONFIG.Full_Threshold_Assert_Value_rach 1023 \
+  CONFIG.Full_Threshold_Assert_Value_rdch 1023 \
+  CONFIG.Full_Threshold_Assert_Value_wach 1023 \
+  CONFIG.Full_Threshold_Assert_Value_wdch 1023 \
+  CONFIG.Full_Threshold_Assert_Value_wrch 1023 \
+  CONFIG.Full_Threshold_Negate_Value 8190 \
+  CONFIG.HAS_ACLKEN false \
+  CONFIG.HAS_TKEEP false \
+  CONFIG.HAS_TSTRB false \
+  CONFIG.ID_WIDTH 0 \
+  CONFIG.INTERFACE_TYPE Native \
+  CONFIG.Inject_Dbit_Error false \
+  CONFIG.Inject_Dbit_Error_axis false \
+  CONFIG.Inject_Dbit_Error_rach false \
+  CONFIG.Inject_Dbit_Error_rdch false \
+  CONFIG.Inject_Dbit_Error_wach false \
+  CONFIG.Inject_Dbit_Error_wdch false \
+  CONFIG.Inject_Dbit_Error_wrch false \
+  CONFIG.Inject_Sbit_Error false \
+  CONFIG.Inject_Sbit_Error_axis false \
+  CONFIG.Inject_Sbit_Error_rach false \
+  CONFIG.Inject_Sbit_Error_rdch false \
+  CONFIG.Inject_Sbit_Error_wach false \
+  CONFIG.Inject_Sbit_Error_wdch false \
+  CONFIG.Inject_Sbit_Error_wrch false \
+  CONFIG.Input_Data_Width 80 \
+  CONFIG.Input_Depth 8192 \
+  CONFIG.Input_Depth_axis 1024 \
+  CONFIG.Input_Depth_rach 16 \
+  CONFIG.Input_Depth_rdch 1024 \
+  CONFIG.Input_Depth_wach 16 \
+  CONFIG.Input_Depth_wdch 1024 \
+  CONFIG.Input_Depth_wrch 16 \
+  CONFIG.Master_interface_Clock_enable_memory_mapped false \
+  CONFIG.Output_Data_Width 160 \
+  CONFIG.Output_Depth 4096 \
+  CONFIG.Output_Register_Type Embedded_Reg \
+  CONFIG.Overflow_Flag false \
+  CONFIG.Overflow_Flag_AXI false \
+  CONFIG.Overflow_Sense Active_High \
+  CONFIG.Overflow_Sense_AXI Active_High \
+  CONFIG.PROTOCOL AXI4 \
+  CONFIG.Performance_Options First_Word_Fall_Through \
+  CONFIG.Programmable_Empty_Type No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_axis No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_rach No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_rdch No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_wach No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_wdch No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_wrch No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Full_Type No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_axis No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_rach No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_rdch No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_wach No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_wdch No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_wrch No_Programmable_Full_Threshold \
+  CONFIG.READ_WRITE_MODE READ_WRITE \
+  CONFIG.RUSER_Width 0 \
+  CONFIG.Read_Clock_Frequency 1 \
+  CONFIG.Read_Data_Count true \
+  CONFIG.Read_Data_Count_Width 13 \
+  CONFIG.Register_Slice_Mode_axis Fully_Registered \
+  CONFIG.Register_Slice_Mode_rach Fully_Registered \
+  CONFIG.Register_Slice_Mode_rdch Fully_Registered \
+  CONFIG.Register_Slice_Mode_wach Fully_Registered \
+  CONFIG.Register_Slice_Mode_wdch Fully_Registered \
+  CONFIG.Register_Slice_Mode_wrch Fully_Registered \
+  CONFIG.Reset_Pin true \
+  CONFIG.Reset_Type Synchronous_Reset \
+  CONFIG.Slave_interface_Clock_enable_memory_mapped false \
+  CONFIG.TDATA_NUM_BYTES 1 \
+  CONFIG.TDEST_WIDTH 0 \
+  CONFIG.TID_WIDTH 0 \
+  CONFIG.TKEEP_WIDTH 1 \
+  CONFIG.TSTRB_WIDTH 1 \
+  CONFIG.TUSER_WIDTH 4 \
+  CONFIG.Underflow_Flag false \
+  CONFIG.Underflow_Flag_AXI false \
+  CONFIG.Underflow_Sense Active_High \
+  CONFIG.Underflow_Sense_AXI Active_High \
+  CONFIG.Use_Dout_Reset true \
+  CONFIG.Use_Embedded_Registers true \
+  CONFIG.Use_Embedded_Registers_axis false \
+  CONFIG.Use_Extra_Logic true \
+  CONFIG.Valid_Flag true \
+  CONFIG.Valid_Sense Active_High \
+  CONFIG.WUSER_Width 0 \
+  CONFIG.Write_Acknowledge_Flag false \
+  CONFIG.Write_Acknowledge_Sense Active_High \
+  CONFIG.Write_Clock_Frequency 1 \
+  CONFIG.Write_Data_Count false \
+  CONFIG.Write_Data_Count_Width 14 \
+  CONFIG.asymmetric_port_width true \
+  CONFIG.axis_type FIFO \
+  CONFIG.core_clk.FREQ_HZ 100000000 \
+  CONFIG.dynamic_power_saving false \
+  CONFIG.ecc_pipeline_reg false \
+  CONFIG.enable_low_latency false \
+  CONFIG.enable_read_pointer_increment_by2 false \
+  CONFIG.rach_type FIFO \
+  CONFIG.rdch_type FIFO \
+  CONFIG.synchronization_stages 2 \
+  CONFIG.synchronization_stages_axi 2 \
+  CONFIG.use_dout_register false \
+  CONFIG.wach_type FIFO \
+  CONFIG.wdch_type FIFO \
+  CONFIG.wrch_type FIFO " [get_ips brute_force_matcher_dispatch_unit_dwc_fifo]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Wed Aug 30 14:27:11 2017
+| Host         : redrealm.cse.psu.edu running 64-bit Red Hat Enterprise Linux Client release 5.11 (Tikanga)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'brute_force_matcher_match_table_info_fifo'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the update of brute_force_matcher_match_table_info_fifo (xilinx.com:ip:fifo_generator:13.1) to current project options.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'brute_force_matcher_match_table_info_fifo'. These changes may impact your design.
+
+
+-Upgrade has removed port 'rd_rst_busy'
+
+-Upgrade has removed port 'wr_rst_busy'
+
+
+3. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'asymmetric_port_width' from 'false' to 'true' has been ignored for IP 'brute_force_matcher_match_table_info_fifo'
+
+
+4. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:fifo_generator:13.1 -user_name brute_force_matcher_match_table_info_fifo
+set_property -dict "\
+  CONFIG.ADDRESS_WIDTH 32 \
+  CONFIG.ARUSER_Width 0 \
+  CONFIG.AWUSER_Width 0 \
+  CONFIG.Add_NGC_Constraint_AXI false \
+  CONFIG.Almost_Empty_Flag false \
+  CONFIG.Almost_Full_Flag false \
+  CONFIG.BUSER_Width 0 \
+  CONFIG.C_SELECT_XPM 0 \
+  CONFIG.Clock_Enable_Type Slave_Interface_Clock_Enable \
+  CONFIG.Clock_Type_AXI Common_Clock \
+  CONFIG.Component_Name brute_force_matcher_match_table_info_fifo \
+  CONFIG.DATA_WIDTH 64 \
+  CONFIG.Data_Count false \
+  CONFIG.Data_Count_Width 12 \
+  CONFIG.Disable_Timing_Violations false \
+  CONFIG.Disable_Timing_Violations_AXI false \
+  CONFIG.Dout_Reset_Value 0 \
+  CONFIG.Empty_Threshold_Assert_Value 4 \
+  CONFIG.Empty_Threshold_Assert_Value_axis 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_rach 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_rdch 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_wach 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_wdch 1022 \
+  CONFIG.Empty_Threshold_Assert_Value_wrch 1022 \
+  CONFIG.Empty_Threshold_Negate_Value 5 \
+  CONFIG.Enable_Common_Overflow false \
+  CONFIG.Enable_Common_Underflow false \
+  CONFIG.Enable_Data_Counts_axis false \
+  CONFIG.Enable_Data_Counts_rach false \
+  CONFIG.Enable_Data_Counts_rdch false \
+  CONFIG.Enable_Data_Counts_wach false \
+  CONFIG.Enable_Data_Counts_wdch false \
+  CONFIG.Enable_Data_Counts_wrch false \
+  CONFIG.Enable_ECC false \
+  CONFIG.Enable_ECC_Type Hard_ECC \
+  CONFIG.Enable_ECC_axis false \
+  CONFIG.Enable_ECC_rach false \
+  CONFIG.Enable_ECC_rdch false \
+  CONFIG.Enable_ECC_wach false \
+  CONFIG.Enable_ECC_wdch false \
+  CONFIG.Enable_ECC_wrch false \
+  CONFIG.Enable_Reset_Synchronization true \
+  CONFIG.Enable_Safety_Circuit false \
+  CONFIG.Enable_TLAST false \
+  CONFIG.Enable_TREADY true \
+  CONFIG.FIFO_Application_Type_axis Data_FIFO \
+  CONFIG.FIFO_Application_Type_rach Data_FIFO \
+  CONFIG.FIFO_Application_Type_rdch Data_FIFO \
+  CONFIG.FIFO_Application_Type_wach Data_FIFO \
+  CONFIG.FIFO_Application_Type_wdch Data_FIFO \
+  CONFIG.FIFO_Application_Type_wrch Data_FIFO \
+  CONFIG.FIFO_Implementation_axis Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_rach Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_rdch Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_wach Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_wdch Common_Clock_Block_RAM \
+  CONFIG.FIFO_Implementation_wrch Common_Clock_Block_RAM \
+  CONFIG.Fifo_Implementation Common_Clock_Block_RAM \
+  CONFIG.Full_Flags_Reset_Value 0 \
+  CONFIG.Full_Threshold_Assert_Value 2047 \
+  CONFIG.Full_Threshold_Assert_Value_axis 1023 \
+  CONFIG.Full_Threshold_Assert_Value_rach 1023 \
+  CONFIG.Full_Threshold_Assert_Value_rdch 1023 \
+  CONFIG.Full_Threshold_Assert_Value_wach 1023 \
+  CONFIG.Full_Threshold_Assert_Value_wdch 1023 \
+  CONFIG.Full_Threshold_Assert_Value_wrch 1023 \
+  CONFIG.Full_Threshold_Negate_Value 2046 \
+  CONFIG.HAS_ACLKEN false \
+  CONFIG.HAS_TKEEP false \
+  CONFIG.HAS_TSTRB false \
+  CONFIG.ID_WIDTH 0 \
+  CONFIG.INTERFACE_TYPE Native \
+  CONFIG.Inject_Dbit_Error false \
+  CONFIG.Inject_Dbit_Error_axis false \
+  CONFIG.Inject_Dbit_Error_rach false \
+  CONFIG.Inject_Dbit_Error_rdch false \
+  CONFIG.Inject_Dbit_Error_wach false \
+  CONFIG.Inject_Dbit_Error_wdch false \
+  CONFIG.Inject_Dbit_Error_wrch false \
+  CONFIG.Inject_Sbit_Error false \
+  CONFIG.Inject_Sbit_Error_axis false \
+  CONFIG.Inject_Sbit_Error_rach false \
+  CONFIG.Inject_Sbit_Error_rdch false \
+  CONFIG.Inject_Sbit_Error_wach false \
+  CONFIG.Inject_Sbit_Error_wdch false \
+  CONFIG.Inject_Sbit_Error_wrch false \
+  CONFIG.Input_Data_Width 32 \
+  CONFIG.Input_Depth 2048 \
+  CONFIG.Input_Depth_axis 1024 \
+  CONFIG.Input_Depth_rach 16 \
+  CONFIG.Input_Depth_rdch 1024 \
+  CONFIG.Input_Depth_wach 16 \
+  CONFIG.Input_Depth_wdch 1024 \
+  CONFIG.Input_Depth_wrch 16 \
+  CONFIG.Master_interface_Clock_enable_memory_mapped false \
+  CONFIG.Output_Data_Width 128 \
+  CONFIG.Output_Depth 512 \
+  CONFIG.Output_Register_Type Embedded_Reg \
+  CONFIG.Overflow_Flag false \
+  CONFIG.Overflow_Flag_AXI false \
+  CONFIG.Overflow_Sense Active_High \
+  CONFIG.Overflow_Sense_AXI Active_High \
+  CONFIG.PROTOCOL AXI4 \
+  CONFIG.Performance_Options First_Word_Fall_Through \
+  CONFIG.Programmable_Empty_Type No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_axis No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_rach No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_rdch No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_wach No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_wdch No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Empty_Type_wrch No_Programmable_Empty_Threshold \
+  CONFIG.Programmable_Full_Type No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_axis No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_rach No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_rdch No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_wach No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_wdch No_Programmable_Full_Threshold \
+  CONFIG.Programmable_Full_Type_wrch No_Programmable_Full_Threshold \
+  CONFIG.READ_WRITE_MODE READ_WRITE \
+  CONFIG.RUSER_Width 0 \
+  CONFIG.Read_Clock_Frequency 1 \
+  CONFIG.Read_Data_Count true \
+  CONFIG.Read_Data_Count_Width 10 \
+  CONFIG.Register_Slice_Mode_axis Fully_Registered \
+  CONFIG.Register_Slice_Mode_rach Fully_Registered \
+  CONFIG.Register_Slice_Mode_rdch Fully_Registered \
+  CONFIG.Register_Slice_Mode_wach Fully_Registered \
+  CONFIG.Register_Slice_Mode_wdch Fully_Registered \
+  CONFIG.Register_Slice_Mode_wrch Fully_Registered \
+  CONFIG.Reset_Pin true \
+  CONFIG.Reset_Type Synchronous_Reset \
+  CONFIG.Slave_interface_Clock_enable_memory_mapped false \
+  CONFIG.TDATA_NUM_BYTES 1 \
+  CONFIG.TDEST_WIDTH 0 \
+  CONFIG.TID_WIDTH 0 \
+  CONFIG.TKEEP_WIDTH 1 \
+  CONFIG.TSTRB_WIDTH 1 \
+  CONFIG.TUSER_WIDTH 4 \
+  CONFIG.Underflow_Flag false \
+  CONFIG.Underflow_Flag_AXI false \
+  CONFIG.Underflow_Sense Active_High \
+  CONFIG.Underflow_Sense_AXI Active_High \
+  CONFIG.Use_Dout_Reset true \
+  CONFIG.Use_Embedded_Registers true \
+  CONFIG.Use_Embedded_Registers_axis false \
+  CONFIG.Use_Extra_Logic true \
+  CONFIG.Valid_Flag true \
+  CONFIG.Valid_Sense Active_High \
+  CONFIG.WUSER_Width 0 \
+  CONFIG.Write_Acknowledge_Flag false \
+  CONFIG.Write_Acknowledge_Sense Active_High \
+  CONFIG.Write_Clock_Frequency 1 \
+  CONFIG.Write_Data_Count false \
+  CONFIG.Write_Data_Count_Width 12 \
+  CONFIG.asymmetric_port_width true \
+  CONFIG.axis_type FIFO \
+  CONFIG.core_clk.FREQ_HZ 100000000 \
+  CONFIG.dynamic_power_saving false \
+  CONFIG.ecc_pipeline_reg false \
+  CONFIG.enable_low_latency false \
+  CONFIG.enable_read_pointer_increment_by2 false \
+  CONFIG.rach_type FIFO \
+  CONFIG.rdch_type FIFO \
+  CONFIG.synchronization_stages 2 \
+  CONFIG.synchronization_stages_axi 2 \
+  CONFIG.use_dout_register false \
+  CONFIG.wach_type FIFO \
+  CONFIG.wdch_type FIFO \
+  CONFIG.wrch_type FIFO " [get_ips brute_force_matcher_match_table_info_fifo]
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Tue Aug 29 18:22:42 2017
+| Host         : redrealm.cse.psu.edu running 64-bit Red Hat Enterprise Linux Client release 5.11 (Tikanga)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_128_4096_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_128_4096_1 from xilinx.com:ip:ila:6.0 (Rev. 1) to xilinx.com:ip:ila:6.1
+
